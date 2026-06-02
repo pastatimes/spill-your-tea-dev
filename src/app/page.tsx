@@ -129,7 +129,7 @@ export default function Home() {
           <p className="text-white/40 text-lg leading-relaxed mb-10">
             Boek een gesprek met mij. We praten over AI, jouw business, en hoe jij het eerlijk en slim kunt inzetten.
           </p>
-          <a href="mailto:info@kimberleyvanruiven.nl" className="btn-primary">
+          <a href="mailto:info@kimberleyvanruiven.nl" className="btn-primary" style={{marginTop: '5rem', display: 'inline-block'}}>
             Plan een sessie
           </a>
         </div>
