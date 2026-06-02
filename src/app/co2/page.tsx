@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export default function CO2Page() {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -255,6 +256,8 @@ export default function CO2Page() {
         }
       `}</style>
 
+      <Script src="https://unpkg.com/@phosphor-icons/web@2.1.1" strategy="afterInteractive" />
+
       <div className="co2-wrap" ref={mainRef}>
 
         <div className="co2-topbar">
@@ -263,7 +266,7 @@ export default function CO2Page() {
         </div>
 
         <header className="co2-header">
-          <button className="theme-btn" onClick={() => (window as any).toggleTheme()}>🌙</button>
+          <button className="theme-btn" onClick={() => (window as any).toggleTheme()}><i className="ph ph-moon"></i></button>
           <div className="header-inner">
             <span className="slogan">Spill Your Tea: AI zonder bullshit</span>
             <h1>AI CO₂ Calculator</h1>
@@ -282,9 +285,9 @@ export default function CO2Page() {
             </div>
             <div className="co2-context" id="co2-context">Vul je gebruik in om je uitstoot te berekenen</div>
             <div className="comparisons">
-              <div className="comparison"><span className="icon">🚗</span><span className="val" id="car-km">0</span><span className="lbl">km autorijden</span></div>
-              <div className="comparison"><span className="icon">💡</span><span className="val" id="lamp-hours">0</span><span className="lbl">uur LED-lamp</span></div>
-              <div className="comparison"><span className="icon">📱</span><span className="val" id="phone-charges">0</span><span className="lbl">× telefoon opladen</span></div>
+              <div className="comparison"><span className="icon"><i className="ph ph-car"></i></span><span className="val" id="car-km">0</span><span className="lbl">km autorijden</span></div>
+              <div className="comparison"><span className="icon"><i className="ph ph-lightbulb"></i></span><span className="val" id="lamp-hours">0</span><span className="lbl">uur LED-lamp</span></div>
+              <div className="comparison"><span className="icon"><i className="ph ph-device-mobile"></i></span><span className="val" id="phone-charges">0</span><span className="lbl">× telefoon opladen</span></div>
             </div>
           </div>
 
@@ -294,7 +297,7 @@ export default function CO2Page() {
           </div>
 
           <div className="card">
-            <div className="card-title">☁️ Cloud AI</div>
+            <div className="card-title"><i className="ph ph-cloud"></i> Cloud AI</div>
             {[
               { id: 'chatgpt', name: 'ChatGPT', sub: 'OpenAI · GPT-4o / GPT-4', defaultMsgs: 5 },
               { id: 'claude',  name: 'Claude (Opus)', sub: 'Anthropic · zwaarste model', defaultMsgs: 10 },
@@ -303,14 +306,14 @@ export default function CO2Page() {
           </div>
 
           <div className="card">
-            <div className="card-title">🌿 Groenere alternatieven</div>
+            <div className="card-title"><i className="ph ph-leaf"></i> Groenere alternatieven</div>
             <ServiceRow id="sonnet" name="Claude Sonnet / Haiku" sub="Anthropic · Sonnet = balans kwaliteit & uitstoot · Haiku = lichtst & snelst" defaultMsgs={0} greenTag="Efficiënter" />
             <ServiceRow id="lechat" name="Le Chat" sub="Mistral AI · Frans elektriciteitsnet (kernenergie)" defaultMsgs={0} greenTag="Europese servers" />
             <ServiceRow id="greenpt" name="GreenPT" sub="Nederlands · Scaleway · GDPR-proof" defaultMsgs={0} greenTag="100% hernieuwbaar" />
           </div>
 
           <div className="card">
-            <div className="card-title">💻 Lokale modellen</div>
+            <div className="card-title"><i className="ph ph-laptop"></i> Lokale modellen</div>
             <div className="service-row" style={{ borderBottom: 'none', paddingBottom: 0 }}>
               <div className="service-header">
                 <div><div className="service-name">Eigen hardware</div><div className="service-sub">Ollama, LM Studio, etc.</div></div>
@@ -339,7 +342,7 @@ export default function CO2Page() {
           </div>
 
           <div className="card">
-            <div className="card-title">🍩 Verdeling per dienst</div>
+            <div className="card-title"><i className="ph ph-chart-donut"></i> Verdeling per dienst</div>
             <div className="chart-wrap">
               <svg width="120" height="120" viewBox="0 0 120 120" style={{ flexShrink: 0 }}>
                 <circle cx="60" cy="60" r="48" fill="none" stroke="var(--subtle)" strokeWidth="16"/>
@@ -354,17 +357,17 @@ export default function CO2Page() {
           </div>
 
           <div className="card">
-            <div className="card-title">💡 Wat kun je nu al doen?</div>
+            <div className="card-title"><i className="ph ph-lightbulb"></i> Wat kun je nu al doen?</div>
             <div className="tips-list">
               {[
-                { icon: '❓', title: 'Vraag jezelf: heeft AI hier echt meerwaarde?', desc: 'Niet elke vraag heeft AI nodig. Een Google-zoekopdracht, een bestaand template of gewoon even nadenken is soms sneller én duurzamer. Bewust niet gebruiken telt ook mee.' },
-                { icon: '🎯', title: 'Kies het juiste model voor de taak', desc: 'Gebruik Claude Sonnet of Haiku voor de meeste taken. Reserveer Opus of GPT-4 alleen voor complexe analyses. Dat scheelt al snel 3× in uitstoot — zonder in te leveren op kwaliteit.' },
-                { icon: '📚', title: 'Bundel je vragen', desc: 'Stuur één uitgebreid bericht in plaats van tien losse. Elk bericht kost energie voor context én verwerking. Neem even de tijd om je vraag compleet te formuleren.' },
-                { icon: '🌱', title: 'Switch naar een groenere provider', desc: 'GreenPT draait volledig op hernieuwbare energie en is ook nog eens GDPR-proof. Le Chat (Mistral) gebruikt Europese servers met een van de laagste CO₂-intensieve elektriciteitsnetjes ter wereld.' },
-                { icon: '🔒', title: 'Gebruik lokale modellen voor privégevoelige taken', desc: 'Tools zoals Ollama of LM Studio draaien op je eigen computer. Geen cloud, geen datalek, en bij groene stroom ook nog eens milieuvriendelijker.' },
+                { icon: 'ph-question', title: 'Vraag jezelf: heeft AI hier echt meerwaarde?', desc: 'Niet elke vraag heeft AI nodig. Een Google-zoekopdracht, een bestaand template of gewoon even nadenken is soms sneller én duurzamer. Bewust niet gebruiken telt ook mee.' },
+                { icon: 'ph-target', title: 'Kies het juiste model voor de taak', desc: 'Gebruik Claude Sonnet of Haiku voor de meeste taken. Reserveer Opus of GPT-4 alleen voor complexe analyses. Dat scheelt al snel 3× in uitstoot — zonder in te leveren op kwaliteit.' },
+                { icon: 'ph-stack', title: 'Bundel je vragen', desc: 'Stuur één uitgebreid bericht in plaats van tien losse. Elk bericht kost energie voor context én verwerking. Neem even de tijd om je vraag compleet te formuleren.' },
+                { icon: 'ph-leaf', title: 'Switch naar een groenere provider', desc: 'GreenPT draait volledig op hernieuwbare energie en is ook nog eens GDPR-proof. Le Chat (Mistral) gebruikt Europese servers met een van de laagste CO₂-intensieve elektriciteitsnetjes ter wereld.' },
+                { icon: 'ph-lock', title: 'Gebruik lokale modellen voor privégevoelige taken', desc: 'Tools zoals Ollama of LM Studio draaien op je eigen computer. Geen cloud, geen datalek, en bij groene stroom ook nog eens milieuvriendelijker.' },
               ].map(tip => (
                 <div key={tip.title} className="tip-item">
-                  <div className="tip-icon">{tip.icon}</div>
+                  <div className="tip-icon"><i className={`ph ${tip.icon}`}></i></div>
                   <div><div className="tip-title">{tip.title}</div><div className="tip-desc">{tip.desc}</div></div>
                 </div>
               ))}
@@ -372,7 +375,7 @@ export default function CO2Page() {
           </div>
 
           <div className="card">
-            <div className="card-title">⚠️ Over de berekeningen</div>
+            <div className="card-title"><i className="ph ph-warning"></i> Over de berekeningen</div>
             <p className="disclaimer">
               Schattingen op basis van gepubliceerd onderzoek (Luccioni et al., 2023) en Mistral Environmental Report (2025).<br /><br />
               <strong>Emissiefactoren:</strong><br />
