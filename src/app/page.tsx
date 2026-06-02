@@ -28,7 +28,7 @@ export default function Home() {
         <p className="fade-up fade-up-delay-2 mt-8 text-lg text-white/40 max-w-md leading-relaxed">
           Geen hype, geen vaagtaal. Eerlijke verhalen over wat AI doet met mensen, bedrijven en de wereld.
         </p>
-        <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center" style={{marginTop: '3.5rem'}}>
+        <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center" style={{marginTop: '5rem'}}>
           <a href="#aanbod" className="btn-primary">Wat ik doe</a>
           <a href="#sessie" className="btn-secondary">Boek een sessie</a>
         </div>
