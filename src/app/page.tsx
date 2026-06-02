@@ -92,11 +92,10 @@ export default function Home() {
             },
             {
               label: "04",
-              title: "Shop",
-              desc: "Binnenkort beschikbaar: tools, gidsen en resources voor ondernemers die AI verantwoord willen inzetten.",
-              cta: "Binnenkort",
-              href: "#",
-              soon: true,
+              title: "AI CO₂ Calculator",
+              desc: "Bereken hoeveel CO₂ jouw AI-gebruik uitstoot — en ontdek groenere alternatieven.",
+              cta: "Open calculator",
+              href: "/co2",
             },
           ].map((item) => (
             <a
