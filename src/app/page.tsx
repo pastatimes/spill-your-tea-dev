@@ -30,7 +30,7 @@ export default function Home() {
         </p>
         <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center" style={{marginTop: '5rem'}}>
           <a href="#aanbod" className="btn-primary">Wat ik doe</a>
-          <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="btn-secondary">Boek een sessie</a>
+          <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="btn-secondary">Spill Your Tea</a>
         </div>
 
         {/* Scroll indicator */}
@@ -80,7 +80,7 @@ export default function Home() {
               label: "02",
               title: "Spill Your Tea sessie",
               desc: "Een één-op-één gesprek over hoe jij als ondernemer omgaat met AI: eerlijk, praktisch en zonder jargon.",
-              cta: "Plan een sessie",
+              cta: "Spill Your Tea",
               href: "https://calendar.app.google/douZqiDQ7p39Xf6u7",
             },
             {
@@ -125,7 +125,7 @@ export default function Home() {
             Boek een gesprek met mij. We praten over AI, jouw business, en hoe jij het eerlijk en slim kunt inzetten.
           </p>
           <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="btn-primary" style={{marginTop: '5rem', display: 'inline-block'}}>
-            Plan een sessie
+            Spill Your Tea
           </a>
         </div>
       </section>
