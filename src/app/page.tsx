@@ -63,7 +63,7 @@ export default function Home() {
       <div className="quote-section">
         <p className="quote-text">
           <span className="quote-serif">Technologie en menselijkheid</span><br />
-          <em>gaan samen.</em>
+          gaan <em>samen.</em>
         </p>
       </div>
 
