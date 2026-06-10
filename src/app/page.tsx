@@ -106,29 +106,29 @@ export default function Home() {
         <h2 className="section-heading">Wat je hier vindt</h2>
 
         <div className="cards-grid">
-          <a href="#" className="card">
+          <a href="/co2" className="card">
             <span className="card-label">01</span>
+            <h3 className="card-title">AI CO₂ Calculator</h3>
+            <p className="card-desc">Bereken hoeveel CO₂ jouw AI-gebruik uitstoot — en ontdek groenere alternatieven.</p>
+            <span className="card-cta">Open calculator →</span>
+          </a>
+          <a href="https://www.instagram.com/kimberleyvanruiven" className="card">
+            <span className="card-label">02</span>
+            <h3 className="card-title">Volg me</h3>
+            <p className="card-desc">Op Instagram deel ik dagelijkse inzichten, vragen en eerlijke meningen over AI en ondernemen.</p>
+            <span className="card-cta">Naar Instagram →</span>
+          </a>
+          <a href="#" className="card">
+            <span className="card-label">03</span>
             <h3 className="card-title">Lees &amp; leer</h3>
             <p className="card-desc">Artikelen en dashboards over ethische AI, bias, vertrouwen en wat het betekent voor jou als ondernemer.</p>
             <span className="card-cta">Lees verder →</span>
           </a>
           <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="card">
-            <span className="card-label">02</span>
+            <span className="card-label">04</span>
             <h3 className="card-title">Spill Your Tea sessie</h3>
             <p className="card-desc">Een één-op-één gesprek over hoe jij als ondernemer omgaat met AI: eerlijk, praktisch en zonder jargon.</p>
             <span className="card-cta">Spill Your Tea →</span>
-          </a>
-          <a href="https://www.instagram.com/kimberleyvanruiven" className="card">
-            <span className="card-label">03</span>
-            <h3 className="card-title">Volg me</h3>
-            <p className="card-desc">Op Instagram deel ik dagelijkse inzichten, vragen en eerlijke meningen over AI en ondernemen.</p>
-            <span className="card-cta">Naar Instagram →</span>
-          </a>
-          <a href="/co2" className="card">
-            <span className="card-label">04</span>
-            <h3 className="card-title">AI CO₂ Calculator</h3>
-            <p className="card-desc">Bereken hoeveel CO₂ jouw AI-gebruik uitstoot — en ontdek groenere alternatieven.</p>
-            <span className="card-cta">Open calculator →</span>
           </a>
         </div>
       </section>
