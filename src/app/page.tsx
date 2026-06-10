@@ -50,11 +50,11 @@ export default function Home() {
           </div>
 
           <div className="over-right">
-            <div className="callout">
+            <a href="#" className="callout callout-link">
               <p className="callout-italic">
                 Ik gids ondernemers bewuster om te gaan met AI en te schalen vanuit integriteit.
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>

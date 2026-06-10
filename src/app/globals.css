@@ -266,6 +266,18 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.callout-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.3s, background 0.3s, transform 0.2s;
+}
+.callout-link:hover {
+  border-color: rgba(200,169,110,0.55);
+  background: rgba(200,169,110,0.10);
+  transform: translateY(-2px);
+}
+
 .callout-italic {
   font-family: var(--font-display), var(--font-geist), system-ui, sans-serif;
   font-style: normal;
