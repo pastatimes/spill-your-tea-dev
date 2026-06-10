@@ -228,7 +228,7 @@ body {
 }
 
 .section-heading {
-  font-family: var(--font-display), var(--font-geist), system-ui, sans-serif;
+  font-family: var(--font-geist), system-ui, sans-serif;
   font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
@@ -379,7 +379,7 @@ body {
 }
 
 .card-title {
-  font-family: var(--font-display), var(--font-geist), system-ui, sans-serif;
+  font-family: var(--font-geist), system-ui, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   margin: 1rem 0 0.75rem;
@@ -432,7 +432,7 @@ body {
 }
 
 .cta-title {
-  font-family: var(--font-display), var(--font-geist), system-ui, sans-serif;
+  font-family: var(--font-geist), system-ui, sans-serif;
   font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
