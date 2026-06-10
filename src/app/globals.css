@@ -1,3 +1,8 @@
+:root {
+  --accent: #c8a96e;
+  --accent-dim: rgba(200, 169, 110, 0.4);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -64,8 +69,8 @@ body {
   transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
 .btn-secondary:hover {
-  border-color: rgba(255,255,255,0.6);
-  background: rgba(255,255,255,0.08);
+  border-color: var(--accent);
+  background: rgba(200,169,110,0.08);
   transform: translateY(-2px);
 }
 
@@ -104,7 +109,7 @@ body {
   text-decoration: none;
   transition: color 0.2s;
 }
-.nav-link:hover { color: #fff; }
+.nav-link:hover { color: var(--accent); }
 
 /* ─── Hero ─── */
 
@@ -136,19 +141,23 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: var(--accent-dim);
   margin-bottom: 1.5rem;
 }
 
 .hero-title {
-  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   line-height: 1.05;
   max-width: 48rem;
 }
 
-.hero-title span { color: rgba(255,255,255,0.55); }
+.hero-title span {
+  color: rgba(255,255,255,0.45);
+  font-style: italic;
+}
 
 .hero-subtitle {
   margin-top: 2rem;
@@ -205,31 +214,24 @@ body {
   padding: 8rem 1.5rem;
 }
 
-.section-photos {
-  max-width: 48rem;
-  margin: 0 auto;
-  padding: 0 1.5rem 8rem;
-}
-
 /* ─── Labels & headings ─── */
 
 .section-label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: var(--accent);
   margin-bottom: 2rem;
 }
 
 .section-heading {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 2rem;
 }
-
-.section-heading span { color: rgba(255,255,255,0.55); }
 
 .section-intro {
   font-size: 1.125rem;
@@ -239,33 +241,35 @@ body {
   max-width: 40rem;
 }
 
+/* ─── Over sectie — asymmetrisch ─── */
+
+.over-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.over-right {
+  padding-top: 0.5rem;
+}
+
 /* ─── Callout ─── */
 
 .callout {
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(200,169,110,0.2);
   border-radius: 1rem;
   padding: 1.75rem;
-  background: rgba(255,255,255,0.02);
-  margin-bottom: 3rem;
+  background: rgba(200,169,110,0.04);
+  margin-bottom: 2.5rem;
 }
 
 .callout-italic {
+  font-family: var(--font-playfair), Georgia, serif;
   font-style: italic;
-  color: rgba(255,255,255,0.55);
-  line-height: 1.6;
-  font-size: 1.125rem;
-}
-
-.callout-heading {
-  font-size: 1rem;
-  font-weight: 600;
-  color: rgba(255,255,255,0.8);
-  margin-bottom: 1rem;
-}
-
-.callout-text {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.6);
   line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 /* ─── Prose ─── */
@@ -274,23 +278,36 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  color: rgba(255,255,255,0.6);
-  line-height: 1.7;
-  font-size: 1.125rem;
-  margin-bottom: 4rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.8;
+  font-size: 1rem;
 }
 
-.prose-last {
-  margin-bottom: 0;
+/* ─── Grote quote ─── */
+
+.quote-section {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 6rem;
+  overflow: hidden;
+}
+
+.quote-text {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  font-style: italic;
+  line-height: 1.1;
+  color: rgba(255,255,255,0.07);
+  letter-spacing: -0.02em;
+  user-select: none;
+}
+
+.quote-text em {
+  color: var(--accent);
+  font-style: inherit;
 }
 
 /* ─── Divider ─── */
-
-.divider {
-  height: 1px;
-  background: rgba(255,255,255,0.05);
-  margin: 0 0 4rem;
-}
 
 .divider-section {
   max-width: 48rem;
@@ -304,40 +321,7 @@ body {
   border: none;
 }
 
-/* ─── Photo grid ─── */
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.photo-grid img {
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
-  border-radius: 1rem;
-  display: block;
-}
-
-.photo-placeholder {
-  width: 100%;
-  height: 20rem;
-  border-radius: 1rem;
-  background: rgba(255,255,255,0.03);
-  border: 1px dashed rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.photo-placeholder span {
-  font-size: 0.875rem;
-  color: rgba(255,255,255,0.2);
-  letter-spacing: 0.05em;
-}
-
-/* ─── Cards (Aanbod) ─── */
+/* ─── Cards ─── */
 
 .cards-grid {
   display: grid;
@@ -348,7 +332,7 @@ body {
 .card {
   display: block;
   padding: 2rem;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 1rem;
   text-decoration: none;
   color: inherit;
@@ -356,19 +340,20 @@ body {
 }
 
 .card:hover {
-  border-color: rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.03);
+  border-color: var(--accent-dim);
+  background: rgba(200,169,110,0.03);
 }
 
 .card-label {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-family: monospace;
   color: rgba(255,255,255,0.2);
 }
 
 .card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   margin: 1rem 0 0.75rem;
 }
 
@@ -380,68 +365,30 @@ body {
 }
 
 .card-cta {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.4);
   transition: color 0.2s;
+  letter-spacing: 0.03em;
 }
 
-.card:hover .card-cta { color: #fff; }
-
-/* ─── Dienst cards ─── */
-
-.dienst-card {
-  display: block;
-  padding: 2rem;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 0.3s, background 0.3s;
-}
-
-.dienst-card:hover {
-  border-color: rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.03);
-}
+.card:hover .card-cta { color: var(--accent); }
 
 .dienst-card-static {
   padding: 2rem;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 1rem;
   background: rgba(255,255,255,0.01);
 }
-
-.dienst-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-.dienst-desc {
-  font-size: 0.875rem;
-  color: rgba(255,255,255,0.4);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.dienst-cta {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: rgba(255,255,255,0.6);
-  transition: color 0.2s;
-}
-
-.dienst-card:hover .dienst-cta { color: #fff; }
 
 .badge {
   display: inline-block;
   padding: 0.4rem 1rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255,255,255,0.1);
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.25);
-  letter-spacing: 0.05em;
+  border: 1px solid rgba(200,169,110,0.25);
+  font-size: 0.7rem;
+  color: var(--accent-dim);
+  letter-spacing: 0.08em;
 }
 
 /* ─── CTA sectie ─── */
@@ -457,7 +404,8 @@ body {
 }
 
 .cta-title {
-  font-size: clamp(1.875rem, 4vw, 2.25rem);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
@@ -466,7 +414,7 @@ body {
   color: rgba(255,255,255,0.4);
   font-size: 1.125rem;
   line-height: 1.6;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 /* ─── Contact ─── */
@@ -484,15 +432,15 @@ body {
 
 .contact-label {
   display: block;
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.25);
+  color: var(--accent-dim);
   margin-bottom: 0.5rem;
 }
 
 .contact-value {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.55);
   font-size: 0.875rem;
   transition: color 0.2s;
 }
@@ -518,9 +466,13 @@ body {
 
 /* ─── Responsive ─── */
 
+@media (max-width: 768px) {
+  .over-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
 @media (max-width: 640px) {
   .nav-links { gap: 1.25rem; }
-  .photo-grid { grid-template-columns: 1fr; }
   .cards-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
+  .quote-text { font-size: clamp(2rem, 8vw, 3rem); }
 }

@@ -33,24 +33,39 @@ export default function Home() {
       </section>
 
       {/* Over */}
-      <section id="over" className="section">
+      <section id="over" className="section-wide">
         <span className="section-label">Over</span>
 
-        <div className="callout">
-          <p className="callout-italic">
-            Ik gids ondernemers bewuster om te gaan met AI en te schalen vanuit integriteit.
-          </p>
-        </div>
+        <div className="over-grid">
+          <div className="over-left">
+            <h2 className="section-heading">Wie ik ben</h2>
+            <div className="prose">
+              <p>
+                Ik ben Kimberley, voormalig IT consultant en gespecialiseerd in ethische AI en AI-bias vanuit mijn academische achtergrond MSc Information Studies. Ik werk met AI vanuit een zo ethisch, bewuste en verantwoordelijke manier en ik help je om je bedrijf aan de achterkant op orde te krijgen, zodat je productiever en met meer structuur kunt werken.
+              </p>
+              <p>
+                Ik geloof dat technologie en menselijkheid samen kunnen gaan, en dat vrouwelijke perspectieven onmisbaar zijn in hoe we AI bouwen en gebruiken. Vanuit een achtergrond in informatiekunde, AI-bias en ethiek help ik ondernemers en kleine bedrijven begrijpen wat ze gebruiken, wat dat betekent, en hoe ze het verantwoord kunnen inrichten.
+              </p>
+            </div>
+          </div>
 
-        <div className="prose prose-last">
-          <p>
-            Ik ben Kimberley, voormalig IT consultant en gespecialiseerd in ethische AI en AI-bias vanuit mijn academische achtergrond MSc Information Studies. Ik werk met AI vanuit een zo ethisch, bewuste en verantwoordelijke manier en ik help je om je bedrijf aan de achterkant op orde te krijgen, zodat je productiever en met meer structuur kunt werken.
-          </p>
-          <p>
-            Ik geloof dat technologie en menselijkheid samen kunnen gaan, en dat vrouwelijke perspectieven onmisbaar zijn in hoe we AI bouwen en gebruiken. Vanuit een achtergrond in informatiekunde, AI-bias en ethiek help ik ondernemers en kleine bedrijven begrijpen wat ze gebruiken, wat dat betekent, en hoe ze het verantwoord kunnen inrichten.
-          </p>
+          <div className="over-right">
+            <div className="callout">
+              <p className="callout-italic">
+                Ik gids ondernemers bewuster om te gaan met AI en te schalen vanuit integriteit.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Grote quote */}
+      <div className="quote-section">
+        <p className="quote-text">
+          Technologie en menselijkheid<br />
+          gaan <em>samen.</em>
+        </p>
+      </div>
 
       {/* Divider */}
       <div className="divider-section"><hr /></div>
@@ -86,7 +101,7 @@ export default function Home() {
           <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="card">
             <span className="card-label">04</span>
             <h3 className="card-title">Losse sessie</h3>
-            <p className="card-desc">Één uur gerichte hulp, precies waar jij op dat moment behoefte aan hebt. Vastzit met een technisch vraagstuk of wil sparren over AI in je bedrijf — je boekt wanneer het jou uitkomt.</p>
+            <p className="card-desc">Één uur gerichte hulp, precies waar jij op dat moment behoefte aan hebt. Vastzit met een technisch vraagstuk of wil sparren over AI — je boekt wanneer het jou uitkomt.</p>
             <span className="card-cta">Boek een sessie →</span>
           </a>
 
