@@ -287,26 +287,20 @@ body {
 
 /* ─── Grote quote ─── */
 
-.quote-stripe-full {
-  background: rgba(255,255,255,0.75);
-  width: 100%;
-  padding: 3rem 0;
-}
-
 .quote-section {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem 6rem;
   overflow: hidden;
 }
 
 .quote-text {
   font-family: var(--font-display), var(--font-geist), system-ui, sans-serif;
-  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  font-size: clamp(3.25rem, 8vw, 6.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
-  color: rgba(0,0,0,0.15);
+  color: rgba(255,255,255,0.25);
   letter-spacing: -0.02em;
   user-select: none;
 }
@@ -316,7 +310,7 @@ body {
 }
 
 .quote-text em {
-  color: #000;
+  color: #fff;
   font-style: italic;
 }
 
