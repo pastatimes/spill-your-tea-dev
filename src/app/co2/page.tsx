@@ -361,7 +361,7 @@ export default function CO2Page() {
             <div className="tips-list">
               {[
                 { icon: 'ph-question', title: 'Vraag jezelf: heeft AI hier echt meerwaarde?', desc: 'Niet elke vraag heeft AI nodig. Een Google-zoekopdracht, een bestaand template of gewoon even nadenken is soms sneller én duurzamer. Bewust niet gebruiken telt ook mee.' },
-                { icon: 'ph-target', title: 'Kies het juiste model voor de taak', desc: 'Gebruik Claude Sonnet of Haiku voor de meeste taken. Reserveer Opus of GPT-4 alleen voor complexe analyses. Dat scheelt al snel 3× in uitstoot — zonder in te leveren op kwaliteit.' },
+                { icon: 'ph-target', title: 'Kies het juiste model voor de taak', desc: 'Gebruik Claude Sonnet of Haiku voor de meeste taken. Reserveer Opus of GPT-4 alleen voor complexe analyses. Dat scheelt al snel 3× in uitstoot, zonder in te leveren op kwaliteit.' },
                 { icon: 'ph-stack', title: 'Bundel je vragen', desc: 'Stuur één uitgebreid bericht in plaats van tien losse. Elk bericht kost energie voor context én verwerking. Neem even de tijd om je vraag compleet te formuleren.' },
                 { icon: 'ph-leaf', title: 'Switch naar een groenere provider', desc: 'GreenPT draait volledig op hernieuwbare energie en is ook nog eens GDPR-proof. Le Chat (Mistral) gebruikt Europese servers met een van de laagste CO₂-intensieve elektriciteitsnetjes ter wereld.' },
                 { icon: 'ph-lock', title: 'Gebruik lokale modellen voor privégevoelige taken', desc: 'Tools zoals Ollama of LM Studio draaien op je eigen computer. Geen cloud, geen datalek, en bij groene stroom ook nog eens milieuvriendelijker.' },

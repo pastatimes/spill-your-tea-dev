@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Kimberley van Ruiven — Spill Your Tea",
+  title: "Kimberley van Ruiven · Spill Your Tea",
   description: "Ethische AI zonder bullshit. Door Kimberley van Ruiven.",
 };
 

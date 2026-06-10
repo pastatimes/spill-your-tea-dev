@@ -62,7 +62,8 @@ export default function Home() {
       {/* Grote quote */}
       <div className="quote-section">
         <p className="quote-text">
-          <span className="quote-serif">Technologie en menselijkheid</span><br />
+          <span className="quote-band"><span className="quote-serif">Technologie en menselijkheid</span></span>
+          <br />
           gaan <em>samen.</em>
         </p>
       </div>
@@ -77,10 +78,10 @@ export default function Home() {
 
         <div className="cards-grid">
 
-          <a href="/co2" className="card">
+          <a href="/co2" className="card card-featured">
             <span className="card-label">01</span>
             <h3 className="card-title">AI CO₂ Calculator</h3>
-            <p className="card-desc">Bereken hoeveel CO₂ jouw AI-gebruik uitstoot — en ontdek groenere alternatieven.</p>
+            <p className="card-desc">Bereken hoeveel CO₂ jouw AI-gebruik uitstoot en ontdek groenere alternatieven.</p>
             <span className="card-cta">Open calculator →</span>
           </a>
 
@@ -98,10 +99,10 @@ export default function Home() {
             <span className="card-cta">Plan een kennismaking →</span>
           </a>
 
-          <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="card">
+          <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="card card-featured">
             <span className="card-label">04</span>
             <h3 className="card-title">Losse sessie</h3>
-            <p className="card-desc">Één uur gerichte hulp, precies waar jij op dat moment behoefte aan hebt. Vastzit met een technisch vraagstuk of wil sparren over AI — je boekt wanneer het jou uitkomt.</p>
+            <p className="card-desc">Één uur gerichte hulp, precies waar jij op dat moment behoefte aan hebt. Vastzit met een technisch vraagstuk of wil sparren over AI? Je boekt wanneer het jou uitkomt.</p>
             <span className="card-cta">Boek een sessie →</span>
           </a>
 
