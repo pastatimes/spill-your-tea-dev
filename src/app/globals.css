@@ -297,7 +297,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
-  color: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.20);
   letter-spacing: -0.02em;
   user-select: none;
 }
@@ -307,7 +307,7 @@ body {
 }
 
 .quote-text em {
-  color: rgba(255,255,255,0.05);
+  color: #fff;
   font-style: italic;
 }
 
