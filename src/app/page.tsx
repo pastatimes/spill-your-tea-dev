@@ -62,7 +62,7 @@ export default function Home() {
       {/* Grote quote */}
       <div className="quote-section">
         <p className="quote-text">
-          Technologie en menselijkheid<br />
+          <span className="quote-serif">Technologie en menselijkheid</span><br />
           gaan <em>samen.</em>
         </p>
       </div>

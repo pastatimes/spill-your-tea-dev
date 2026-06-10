@@ -307,6 +307,11 @@ body {
   font-style: inherit;
 }
 
+.quote-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-style: italic;
+}
+
 /* ─── Divider ─── */
 
 .divider-section {

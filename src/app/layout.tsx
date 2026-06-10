@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Space_Grotesk } from "next/font/google";
+import { Geist, Space_Grotesk, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
@@ -10,6 +10,12 @@ const geist = Geist({
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-display",
   subsets: ["latin"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${geist.variable} ${spaceGrotesk.variable}`}>
+    <html lang="nl" className={`${geist.variable} ${spaceGrotesk.variable} ${playfair.variable}`}>
       <body>
         {children}
       </body>
