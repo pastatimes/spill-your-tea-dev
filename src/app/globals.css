@@ -304,7 +304,7 @@ body {
 
 .quote-text em {
   color: var(--accent);
-  font-style: inherit;
+  font-style: italic;
 }
 
 .quote-serif {
