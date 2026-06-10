@@ -144,7 +144,7 @@ body {
   font-size: 1rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent-dim);
+  color: var(--accent);
   margin-bottom: 1.5rem;
 }
 
