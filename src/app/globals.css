@@ -308,8 +308,8 @@ body {
 }
 
 .quote-serif {
-  font-family: var(--font-playfair), Georgia, serif;
-  font-style: italic;
+  font-family: var(--font-geist), system-ui, sans-serif;
+  font-style: normal;
 }
 
 /* ─── Divider ─── */
