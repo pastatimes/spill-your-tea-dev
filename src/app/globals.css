@@ -141,8 +141,8 @@ body {
 .hero > * { position: relative; z-index: 1; }
 
 .hero-tag {
-  font-size: 0.75rem;
-  letter-spacing: 0.3em;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent-dim);
   margin-bottom: 1.5rem;
@@ -164,7 +164,7 @@ body {
 .hero-subtitle {
   margin-top: 2rem;
   font-size: 1.125rem;
-  color: rgba(255,255,255,0.4);
+  color: #fff;
   max-width: 28rem;
   line-height: 1.6;
 }
