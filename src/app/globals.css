@@ -287,6 +287,18 @@ body {
 
 /* ─── Grote quote ─── */
 
+.quote-stripe-full {
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(200,169,110,0.10) 20%,
+    rgba(200,169,110,0.18) 50%,
+    rgba(200,169,110,0.10) 80%,
+    transparent 100%
+  );
+  width: 100%;
+  padding: 3rem 0;
+}
+
 .quote-section {
   max-width: 64rem;
   margin: 0 auto;

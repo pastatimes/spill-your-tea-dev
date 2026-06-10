@@ -60,11 +60,13 @@ export default function Home() {
       </section>
 
       {/* Grote quote */}
-      <div className="quote-section">
-        <p className="quote-text">
-          <span className="quote-serif">Technologie en menselijkheid</span><br />
-          gaan <em>samen.</em>
-        </p>
+      <div className="quote-stripe-full">
+        <div className="quote-section">
+          <p className="quote-text">
+            <span className="quote-serif">Technologie en menselijkheid</span><br />
+            gaan <em>samen.</em>
+          </p>
+        </div>
       </div>
 
       {/* Divider */}
