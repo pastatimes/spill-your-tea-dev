@@ -116,7 +116,7 @@ export default function Home() {
           <span className="section-label">Spill Your Tea sessie</span>
           <h2 className="cta-title">Klaar om te spillen?</h2>
           <p className="cta-text">
-            Boek een gesprek met mij. We praten over AI, jouw business, en hoe jij het eerlijk en slim kunt inzetten.
+            Boek een gesprek met mij. We praten over AI, jouw business, en hoe jij het eerlijk, verantwoord en efficiënt kunt inzetten.
           </p>
           <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="btn-primary">
             Spill Your Tea
