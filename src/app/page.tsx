@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero">
-        <p className="hero-tag fade-up">Kimberley van Ruiven</p>
+        <p className="hero-tag fade-up">Kimberley van Ruiven · Soul tech architect</p>
         <h1 className="hero-title fade-up fade-up-1">
           Ethische AI<br />
           <span>zonder bullshit.</span>
