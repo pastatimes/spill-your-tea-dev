@@ -310,7 +310,7 @@ body {
   font-family: var(--font-display), var(--font-geist), system-ui, sans-serif;
   font-size: clamp(3.25rem, 8vw, 6.5rem);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.1;
   color: rgba(255,255,255,0.15);
   letter-spacing: -0.02em;
@@ -324,6 +324,7 @@ body {
 .quote-text em {
   color: #fff;
   font-style: italic;
+  font-weight: 700;
 }
 
 /* ─── Divider ─── */
