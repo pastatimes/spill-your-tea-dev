@@ -21,7 +21,7 @@ export default function Home() {
           <span>zonder bullshit.</span>
         </h1>
         <p className="hero-subtitle fade-up fade-up-2">
-          Geen hype, geen vaagtaal. Eerlijke verhalen over wat AI doet met mensen, bedrijven en de wereld.
+          Voor een mens-gerichte toekomst met technologie.
         </p>
         <div className="hero-buttons fade-up fade-up-3">
           <a href="#over" className="btn-primary">Wie ik ben</a>
