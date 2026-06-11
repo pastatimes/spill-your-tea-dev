@@ -131,6 +131,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Parallax divider */}
+      <div className="parallax-divider" />
+
       {/* Sessie CTA */}
       <section id="sessie" className="cta-section">
         <div className="cta-inner">
