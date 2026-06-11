@@ -93,19 +93,40 @@ export default function Home() {
             <span className="badge">Binnenkort beschikbaar</span>
           </div>
 
-          <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="card">
+          <a href="#" className="card">
             <span className="card-label">03</span>
-            <h3 className="card-title">Strippenkaart Bewuste AI</h3>
-            <p className="card-desc">Een vast aanspreekpunt voor alles rondom verantwoord AI-gebruik in je bedrijf. Tien uur hulp voor kwartaalchecks, vragen over nieuwe tools of sparren over ethische vraagstukken.</p>
-            <span className="card-cta">Plan een kennismaking →</span>
+            <h3 className="card-title">Lees &amp; leer</h3>
+            <p className="card-desc">Artikelen en dashboards over ethische AI, bias, vertrouwen en wat het betekent voor jou als ondernemer.</p>
+            <span className="card-cta">Lees verder →</span>
           </a>
 
-          <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="card card-featured">
+          <a href="https://www.instagram.com/kimberleyvanruiven" className="card card-featured">
             <span className="card-label">04</span>
-            <h3 className="card-title">Losse sessie</h3>
-            <p className="card-desc">Één uur gerichte hulp, precies waar jij op dat moment behoefte aan hebt. Vastzit met een technisch vraagstuk of wil sparren over AI? Je boekt wanneer het jou uitkomt.</p>
-            <span className="card-cta">Boek een sessie →</span>
+            <h3 className="card-title">Volg me</h3>
+            <p className="card-desc">Op Instagram deel ik dagelijkse inzichten, vragen en eerlijke meningen over AI en ondernemen.</p>
+            <span className="card-cta">Naar Instagram →</span>
           </a>
+
+        </div>
+      </section>
+
+      {/* Diensten */}
+      <section className="section-wide">
+        <span className="section-label">Werk met mij</span>
+        <h2 className="section-heading">Persoonlijk aanbod</h2>
+        <div className="diensten-grid">
+
+          <div className="dienst-blok">
+            <h3 className="dienst-title">Strippenkaart Bewuste AI</h3>
+            <p className="dienst-desc">Een vast aanspreekpunt voor alles rondom verantwoord AI-gebruik in je bedrijf. Tien uur hulp voor kwartaalchecks, vragen over nieuwe tools of sparren over ethische vraagstukken.</p>
+            <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="btn-primary">Plan een kennismaking</a>
+          </div>
+
+          <div className="dienst-blok">
+            <h3 className="dienst-title">Losse sessie</h3>
+            <p className="dienst-desc">Één uur gerichte hulp, precies waar jij op dat moment behoefte aan hebt. Vastzit met een technisch vraagstuk of wil sparren over AI? Je boekt wanneer het jou uitkomt.</p>
+            <a href="https://calendar.app.google/douZqiDQ7p39Xf6u7" className="btn-primary">Boek een sessie</a>
+          </div>
 
         </div>
       </section>

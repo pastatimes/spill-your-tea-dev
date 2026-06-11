@@ -429,6 +429,41 @@ body {
   letter-spacing: 0.08em;
 }
 
+/* ─── Diensten ─── */
+
+.diensten-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.dienst-blok {
+  padding: 2.5rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.dienst-title {
+  font-family: var(--font-geist), system-ui, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dienst-desc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.7;
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .diensten-grid { grid-template-columns: 1fr; }
+}
+
 /* ─── CTA sectie ─── */
 
 .cta-section {
