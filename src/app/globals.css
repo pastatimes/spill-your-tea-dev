@@ -549,7 +549,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.5);
 }
 
 .footer-brand {
