@@ -103,7 +103,7 @@ export default function Home() {
           <a href="https://www.instagram.com/kimberleyvanruiven" className="card card-featured">
             <span className="card-label">04</span>
             <h3 className="card-title">Volg me</h3>
-            <p className="card-desc">Op Instagram deel ik dagelijkse inzichten, vragen en eerlijke meningen over AI en ondernemen.</p>
+            <p className="card-desc">Op Instagram deel ik inzichten, vragen en eerlijke meningen over AI en ondernemen.</p>
             <span className="card-cta">Naar Instagram →</span>
           </a>
 
