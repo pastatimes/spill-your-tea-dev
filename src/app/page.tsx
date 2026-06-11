@@ -1,6 +1,10 @@
+import ParallaxInit from './ParallaxInit';
+
 export default function Home() {
   return (
     <main>
+
+      <ParallaxInit />
 
       {/* Nav */}
       <nav className="nav">

@@ -480,11 +480,6 @@ body {
   height: 10rem;
 }
 
-@media (min-width: 769px) {
-  .hero { background-attachment: fixed; }
-  .quote-stripe-full { background-attachment: fixed; }
-  .parallax-divider { background-attachment: fixed; }
-}
 
 @media (max-width: 768px) {
   .hero {
