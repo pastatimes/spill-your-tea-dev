@@ -480,6 +480,14 @@ body {
   height: 10rem;
 }
 
+@media (max-width: 768px) {
+  .hero,
+  .quote-stripe-full,
+  .parallax-divider {
+    background-attachment: scroll;
+  }
+}
+
 @media (max-width: 640px) {
   .diensten-grid { grid-template-columns: 1fr; }
 }
