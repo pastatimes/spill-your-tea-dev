@@ -40,6 +40,8 @@ body {
 
 .btn-primary {
   display: inline-block;
+  position: relative;
+  overflow: hidden;
   padding: 1rem 2.5rem;
   background: #fff;
   color: #000;
@@ -48,11 +50,23 @@ body {
   letter-spacing: 0.05em;
   border-radius: 9999px;
   text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 9999px;
 }
 .btn-primary:hover {
-  background: #e5e5e5;
   transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(200,169,110,0.25);
+}
+.btn-primary:hover::after {
+  opacity: 0.18;
 }
 
 .btn-secondary {
